@@ -7,14 +7,14 @@ spec:
   selector:
     matchLabels:
       app: myapp1
-  template: 
-    metadata: # Dictionary
+  template:
+    metadata:
       name: myapp1-pod
-      labels: # Dictionary 
-        app: myapp1       
+      labels:
+        app: myapp1
     spec:
-      containers: # List
-      - name: nginx-container
-        image: nginx:1.14.2
-        ports:
-        - containerPort: 80
+      containers:
+        - name: nginx-container
+          image: 'nginx:1.14.2'
+          ports:
+            - containerPort: 80

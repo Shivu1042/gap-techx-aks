@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: hpa-nginx
-        image: stacksimplify/kubenginx:1.0.0
+        image: nginx:1.14.2
         ports:
         - containerPort: 80
         resources:
